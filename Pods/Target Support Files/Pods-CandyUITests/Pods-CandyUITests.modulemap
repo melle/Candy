@@ -1,0 +1,6 @@
+framework module Pods_CandyUITests {
+  umbrella header "Pods-CandyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

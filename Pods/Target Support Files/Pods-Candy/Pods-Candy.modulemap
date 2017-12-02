@@ -1,0 +1,6 @@
+framework module Pods_Candy {
+  umbrella header "Pods-Candy-umbrella.h"
+
+  export *
+  module * { export * }
+}

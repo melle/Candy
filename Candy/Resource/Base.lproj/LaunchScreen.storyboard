@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Black</string>
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCg-Hb-Xxz">
+                                <rect key="frame" x="77" y="223" width="220" height="220"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4h-e7-Ysw">
+                                        <rect key="frame" x="48" y="146" width="125" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="1sY-b8-nwp"/>
+                                            <constraint firstAttribute="width" constant="125" id="GdR-Rr-vl2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" red="0.14117647058823529" green="0.23137254901960785" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Task Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miz-xv-FIu">
+                                        <rect key="frame" x="5" y="179" width="210" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Sx2-I9-QzG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                        <color key="textColor" red="0.14117647059999999" green="0.23137254900000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candy_stick" translatesAutoresizingMaskIntoConstraints="NO" id="Xqp-w5-J9N">
+                                        <rect key="frame" x="49" y="0.0" width="122" height="146"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="122" id="Odo-Au-1Zv"/>
+                                            <constraint firstAttribute="height" constant="146" id="y9y-Ph-ay9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Xqp-w5-J9N" firstAttribute="top" secondItem="BCg-Hb-Xxz" secondAttribute="top" id="5Fj-T3-Zpp"/>
+                                    <constraint firstItem="Xqp-w5-J9N" firstAttribute="centerX" secondItem="BCg-Hb-Xxz" secondAttribute="centerX" id="6f8-iY-xgo"/>
+                                    <constraint firstItem="N4h-e7-Ysw" firstAttribute="centerX" secondItem="BCg-Hb-Xxz" secondAttribute="centerX" id="F8C-1g-Ptx"/>
+                                    <constraint firstItem="N4h-e7-Ysw" firstAttribute="top" secondItem="Xqp-w5-J9N" secondAttribute="bottom" id="FQt-GS-Ul8"/>
+                                    <constraint firstItem="miz-xv-FIu" firstAttribute="leading" secondItem="BCg-Hb-Xxz" secondAttribute="leading" constant="5" id="FsK-sq-5p9"/>
+                                    <constraint firstItem="miz-xv-FIu" firstAttribute="top" secondItem="N4h-e7-Ysw" secondAttribute="bottom" constant="9" id="VGb-aa-4SP"/>
+                                    <constraint firstAttribute="height" constant="220" id="ffJ-rL-hJ7"/>
+                                    <constraint firstAttribute="trailing" secondItem="miz-xv-FIu" secondAttribute="trailing" constant="5" id="gyF-M0-gEp"/>
+                                    <constraint firstAttribute="width" constant="220" id="pGQ-b4-5n4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BCg-Hb-Xxz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="20T-9C-V3i"/>
+                            <constraint firstItem="BCg-Hb-Xxz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2Jd-Zh-50S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="candy_stick" width="228" height="257"/>
+    </resources>
+</document>
