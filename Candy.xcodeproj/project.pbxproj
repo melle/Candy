@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9439BE271FDCA29A00D47E49 /* InputTaskVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9439BE261FDCA29A00D47E49 /* InputTaskVCTests.swift */; };
 		9469911E1FCDDB34001B58C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9469911D1FCDDB34001B58C0 /* AppDelegate.swift */; };
 		946991201FCDDB34001B58C0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9469911F1FCDDB34001B58C0 /* LoginVC.swift */; };
 		946991251FCDDB34001B58C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946991241FCDDB34001B58C0 /* Assets.xcassets */; };
@@ -19,6 +20,18 @@
 		94BA96121FD1C207003E9819 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA96111FD1C207003E9819 /* User.swift */; };
 		94BA96141FD1C376003E9819 /* Utitlity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA96131FD1C376003E9819 /* Utitlity.swift */; };
 		94BA96161FD2192E003E9819 /* RegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA96151FD2192D003E9819 /* RegisterTests.swift */; };
+		94F807B81FD3098800A38906 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807B71FD3098700A38906 /* CustomTabBarController.swift */; };
+		94F807BA1FD3183D00A38906 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807B91FD3183D00A38906 /* ListVC.swift */; };
+		94F807BC1FD36AE500A38906 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807BB1FD36AE500A38906 /* Popover.swift */; };
+		94F807BF1FD36BA700A38906 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807BE1FD36BA700A38906 /* TaskTests.swift */; };
+		94F807C11FD36F6300A38906 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807C01FD36F6300A38906 /* Task.swift */; };
+		94F807C31FD3718500A38906 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807C21FD3718500A38906 /* ItemManagerTests.swift */; };
+		94F807C51FD372F700A38906 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807C41FD372F700A38906 /* TaskManager.swift */; };
+		94F807C71FD380BC00A38906 /* ListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807C61FD380BC00A38906 /* ListVCTests.swift */; };
+		94F807C91FD387F200A38906 /* TaskListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807C81FD387F200A38906 /* TaskListDataProvider.swift */; };
+		94F807CC1FD3896800A38906 /* TaskListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807CB1FD3896800A38906 /* TaskListDataProviderTests.swift */; };
+		94F807CE1FD40E1D00A38906 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807CD1FD40E1D00A38906 /* TaskCell.swift */; };
+		94F807D11FD4C69B00A38906 /* InputTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F807D01FD4C69A00A38906 /* InputTaskVC.swift */; };
 		B08911BAE5590E27B7C4CCF8 /* Pods_CandyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07393F5C2C6F42E3CB9D691E /* Pods_CandyTests.framework */; };
 		D2CB51888C46B312F48021E6 /* Pods_CandyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B17B088F7D48F01645CD7A /* Pods_CandyUITests.framework */; };
 		F946AB6C9F7A742DC89D07A5 /* Pods_Candy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C74C47F2F8530C5DDFE8A67 /* Pods_Candy.framework */; };
@@ -49,6 +62,7 @@
 		67B17B088F7D48F01645CD7A /* Pods_CandyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABA843178014D1ACE0A909A /* Pods-CandyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CandyTests/Pods-CandyTests.release.xcconfig"; sourceTree = "<group>"; };
 		8C74C47F2F8530C5DDFE8A67 /* Pods_Candy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9439BE261FDCA29A00D47E49 /* InputTaskVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTaskVCTests.swift; sourceTree = "<group>"; };
 		9469911A1FCDDB34001B58C0 /* Candy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9469911D1FCDDB34001B58C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../New Group/AppDelegate.swift"; sourceTree = "<group>"; };
 		9469911F1FCDDB34001B58C0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -67,6 +81,18 @@
 		94BA96111FD1C207003E9819 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		94BA96131FD1C376003E9819 /* Utitlity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utitlity.swift; sourceTree = "<group>"; };
 		94BA96151FD2192D003E9819 /* RegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTests.swift; sourceTree = "<group>"; };
+		94F807B71FD3098700A38906 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		94F807B91FD3183D00A38906 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		94F807BB1FD36AE500A38906 /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
+		94F807BE1FD36BA700A38906 /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		94F807C01FD36F6300A38906 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		94F807C21FD3718500A38906 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
+		94F807C41FD372F700A38906 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		94F807C61FD380BC00A38906 /* ListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVCTests.swift; sourceTree = "<group>"; };
+		94F807C81FD387F200A38906 /* TaskListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDataProvider.swift; sourceTree = "<group>"; };
+		94F807CB1FD3896800A38906 /* TaskListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDataProviderTests.swift; sourceTree = "<group>"; };
+		94F807CD1FD40E1D00A38906 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		94F807D01FD4C69A00A38906 /* InputTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTaskVC.swift; sourceTree = "<group>"; };
 		D7A9BBA2F9C0698569563921 /* Pods-CandyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CandyUITests/Pods-CandyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F54205C548BDBAA89221BE2E /* Pods-Candy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Candy/Pods-Candy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +164,10 @@
 		946991311FCDDB34001B58C0 /* CandyTests */ = {
 			isa = PBXGroup;
 			children = (
-				94BA96101FD1C077003E9819 /* Login */,
+				94F807CF1FD4915C00A38906 /* View */,
+				94F807CA1FD3894D00A38906 /* Service */,
+				94F807BD1FD36B8A00A38906 /* Model */,
+				94BA96101FD1C077003E9819 /* Controller */,
 				946991341FCDDB34001B58C0 /* Info.plist */,
 			);
 			path = CandyTests;
@@ -158,6 +187,9 @@
 			children = (
 				9469911F1FCDDB34001B58C0 /* LoginVC.swift */,
 				94BA960B1FD1BAE5003E9819 /* RegisterVC.swift */,
+				94F807B71FD3098700A38906 /* CustomTabBarController.swift */,
+				94F807B91FD3183D00A38906 /* ListVC.swift */,
+				94F807D01FD4C69A00A38906 /* InputTaskVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +197,7 @@
 		946991581FD1A29F001B58C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				94F807CD1FD40E1D00A38906 /* TaskCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				94BA96111FD1C207003E9819 /* User.swift */,
+				94F807C01FD36F6300A38906 /* Task.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +226,7 @@
 			children = (
 				94BA96091FD1A9F7003E9819 /* UIView+Constraints.swift */,
 				94BA96131FD1C376003E9819 /* Utitlity.swift */,
+				94F807BB1FD36AE500A38906 /* Popover.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -200,17 +235,45 @@
 			isa = PBXGroup;
 			children = (
 				94BA960E1FD1C049003E9819 /* LoginService.swift */,
+				94F807C41FD372F700A38906 /* TaskManager.swift */,
+				94F807C81FD387F200A38906 /* TaskListDataProvider.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		94BA96101FD1C077003E9819 /* Login */ = {
+		94BA96101FD1C077003E9819 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				946991321FCDDB34001B58C0 /* LoginTests.swift */,
 				94BA96151FD2192D003E9819 /* RegisterTests.swift */,
+				94F807C61FD380BC00A38906 /* ListVCTests.swift */,
+				9439BE261FDCA29A00D47E49 /* InputTaskVCTests.swift */,
 			);
-			path = Login;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94F807BD1FD36B8A00A38906 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94F807BE1FD36BA700A38906 /* TaskTests.swift */,
+				94F807C21FD3718500A38906 /* ItemManagerTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94F807CA1FD3894D00A38906 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				94F807CB1FD3896800A38906 /* TaskListDataProviderTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		94F807CF1FD4915C00A38906 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A4B5B0AE8F77A92628A35816 /* Frameworks */ = {
@@ -477,12 +540,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Candy/Pods-Candy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -535,9 +600,17 @@
 				94BA960A1FD1A9F7003E9819 /* UIView+Constraints.swift in Sources */,
 				94BA960C1FD1BAE5003E9819 /* RegisterVC.swift in Sources */,
 				94BA96141FD1C376003E9819 /* Utitlity.swift in Sources */,
+				94F807BA1FD3183D00A38906 /* ListVC.swift in Sources */,
+				94F807C91FD387F200A38906 /* TaskListDataProvider.swift in Sources */,
 				94BA96121FD1C207003E9819 /* User.swift in Sources */,
 				94BA960F1FD1C049003E9819 /* LoginService.swift in Sources */,
+				94F807C51FD372F700A38906 /* TaskManager.swift in Sources */,
+				94F807D11FD4C69B00A38906 /* InputTaskVC.swift in Sources */,
+				94F807CE1FD40E1D00A38906 /* TaskCell.swift in Sources */,
+				94F807B81FD3098800A38906 /* CustomTabBarController.swift in Sources */,
+				94F807BC1FD36AE500A38906 /* Popover.swift in Sources */,
 				946991201FCDDB34001B58C0 /* LoginVC.swift in Sources */,
+				94F807C11FD36F6300A38906 /* Task.swift in Sources */,
 				9469911E1FCDDB34001B58C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,8 +619,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F807C71FD380BC00A38906 /* ListVCTests.swift in Sources */,
 				94BA96161FD2192E003E9819 /* RegisterTests.swift in Sources */,
 				946991331FCDDB34001B58C0 /* LoginTests.swift in Sources */,
+				94F807C31FD3718500A38906 /* ItemManagerTests.swift in Sources */,
+				94F807BF1FD36BA700A38906 /* TaskTests.swift in Sources */,
+				94F807CC1FD3896800A38906 /* TaskListDataProviderTests.swift in Sources */,
+				9439BE271FDCA29A00D47E49 /* InputTaskVCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

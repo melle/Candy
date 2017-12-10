@@ -8,6 +8,7 @@ target 'Candy' do
   # Pods for Candy
   pod 'RealmSwift'
   pod 'IQKeyboardManagerSwift', '5.0.0'
+  pod 'ActionSheetPicker-3.0'
 
   target 'CandyTests' do
     inherit! :search_paths

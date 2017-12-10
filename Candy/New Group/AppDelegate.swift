@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = LoginVC()
+        window?.rootViewController = CustomTabBarController()
+        
+        UITabBar.appearance().tintColor = #colorLiteral(red: 0.1411764706, green: 0.231372549, blue: 0.4196078431, alpha: 1)
         
         IQKeyboardManager.sharedManager().enable = true
         
