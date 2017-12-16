@@ -18,6 +18,7 @@ class TaskCell: UITableViewCell {
     
     var delegate: TaskDelegate?
     var indexPath = IndexPath()
+    var taskListVc: ListVC?
     
     fileprivate lazy var titleLabel: UILabel = {
        let label = UILabel()
@@ -30,7 +31,7 @@ class TaskCell: UITableViewCell {
     fileprivate lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        label.numberOfLines = 0
+        label.numberOfLines = 3
         label.sizeToFit()
         label.font = UIFont(name: "Avenir-Book", size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -106,6 +107,7 @@ class TaskCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         //configure()
         markTasDonekButton.addTarget(self, action: #selector(handlePriorityButtonClicked), for: .touchUpInside)
+        deleteButton.addTarget(self, action: #selector(handleDeleteTask), for: .touchUpInside)
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -116,11 +118,10 @@ class TaskCell: UITableViewCell {
         self.indexPath = indexPath
         
         titleLabel.text = task.title
-        descriptionLabel.text = task.description
+        descriptionLabel.text = task.taskDescription
         
-        let date = Date(timeIntervalSince1970: task.timestamp)
-        dateLabel.text = dateFormatter.string(from: date)
-        timeLabel.text = timeFormatter.string(from: date)
+        dateLabel.text = dateFormatter.string(from: task.timestamp)
+        timeLabel.text = timeFormatter.string(from: task.timestamp)
         
         changePriorityBackgroundColorForDoneTask(checked: checked)
         
@@ -129,6 +130,15 @@ class TaskCell: UITableViewCell {
     
     @objc func handlePriorityButtonClicked(){
         delegate?.markTaskAsDone(indexPath: indexPath)
+    }
+    
+    @objc func handleDeleteTask(){
+        if let window = UIApplication.shared.delegate?.window {
+            let vc = window?.rootViewController
+            vc?.showAlertWithOk(withTitle: "Delete Task", message: "Are you sure you want to delete this task?", completion: {
+                self.delegate?.deleteTask(indexPath: self.indexPath)
+            })
+        }
     }
     
     func changePriorityBackgroundColorForDoneTask(checked: Bool){

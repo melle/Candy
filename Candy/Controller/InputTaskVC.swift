@@ -191,7 +191,11 @@ class InputTaskVC: UIViewController {
         }
         let date = dateFormatter.date(from: taskDate)
         let priority = (taskPriority == "High") ? 1 : 0
-        let task = Task(title: taskTitle, description: taskDescription, timestamp: date!.timeIntervalSince1970, priority: priority)
+        let task = Task()
+        task.title = taskTitle
+        task.taskDescription = taskDescription
+        task.timestamp = date!
+        task.priority = priority
         self.taskManager?.addTask(task)
         dissmissVC()
     }

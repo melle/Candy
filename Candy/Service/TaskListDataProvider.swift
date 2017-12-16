@@ -72,7 +72,17 @@ class TaskListDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate
 extension TaskListDataProvider: TaskDelegate {
     
     func deleteTask(indexPath: IndexPath) {
-        
+        guard let taskManager = taskManager else {fatalError()}
+        guard let section = Section(rawValue: indexPath.section)else {fatalError()}
+        switch section {
+        case .todo:
+            let task = taskManager.todoTasks![indexPath.row]
+            taskManager.deleteTask(task: task)
+        case .done:
+            let task = taskManager.doneTasks![indexPath.row]
+            taskManager.deleteTask(task: task)
+        }
+        NotificationCenter.default.post(name: .reloadListVC, object: nil)
     }
     
     func markTaskAsDone(indexPath: IndexPath) {

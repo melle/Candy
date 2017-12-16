@@ -20,26 +20,13 @@ func ==(lhs: Task, rhs: Task) -> Bool {
 }
 
 import Foundation
+import RealmSwift
 
-struct Task: Equatable {
+class Task: Object {
     
-    let title: String
-    let description: String
-    let timestamp: Double
-    let priority: Int
-    var isChecked = false
-    
-    init(title: String, description: String, timestamp: Double, priority: Int) {
-        self.title = title
-        self.description = description
-        self.timestamp = timestamp
-        self.priority = priority
-    }
-    
-    init() {
-        title = ""
-        description = ""
-        timestamp = 0.0
-        priority = 0
-    }
+    @objc dynamic var title: String = ""
+    @objc dynamic var taskDescription: String = ""
+    @objc dynamic var timestamp: Date = Date(timeIntervalSince1970: 1)
+    @objc dynamic var priority: Int = 0
+    @objc dynamic var isChecked: Bool = false
 }

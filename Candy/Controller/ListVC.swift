@@ -10,6 +10,11 @@ import UIKit
 
 class ListVC: UIViewController {
     
+    enum Priority: String {
+        case HIGH = "Priority - High"
+        case NORMAL = "Priority - Normal"
+    }
+    
     fileprivate var searchBar: UISearchBar!
     var searchActive : Bool = false
     var searchBarButton: UIBarButtonItem!
@@ -49,6 +54,7 @@ class ListVC: UIViewController {
         button.layer.borderColor = #colorLiteral(red: 0.1411764706, green: 0.231372549, blue: 0.4196078431, alpha: 1).cgColor
         button.layer.borderWidth = 1
         button.layer.cornerRadius = 5
+        button.isHidden = true
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -63,16 +69,14 @@ class ListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        
         dataProvider = TaskListDataProvider()
-        
         searchBar = UISearchBar()
         searchBar.delegate = self
         
         taskTableView.delegate = dataProvider
         taskTableView.dataSource = dataProvider
         
-        dataProvider.taskManager = TaskService.shared.taskManager
+        dataProvider.taskManager = TaskService.shared.getTodayTaskManager()
         
         //taskTableView.estimatedRowHeight = 250
         taskTableView.rowHeight = 150
@@ -124,7 +128,20 @@ class ListVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+//        dataProvider = TaskListDataProvider()
+//
+//        taskTableView.delegate = dataProvider
+//        taskTableView.dataSource = dataProvider
+//
+//        dataProvider.taskManager = TaskService.shared.getTodayTaskManager()
+        reloadTaskTable()
+    }
+    
+    func reloadTaskTable(){
         taskTableView.reloadData()
+        if self.dataProvider.taskManager?.todoCount ?? 0 > 0 || self.dataProvider.taskManager?.doneCount ?? 0 > 0 {
+            self.dropDownButton.isHidden = false
+        }
     }
     
     func configureViews(){
@@ -155,7 +172,7 @@ class ListVC: UIViewController {
 
 extension ListVC {
     @objc func reloadTableView(notification: NSNotification) {
-        taskTableView.reloadData()
+        reloadTaskTable()
     }
 }
 
@@ -204,8 +221,18 @@ extension ListVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        _ = sortOptions[indexPath.item]
         
+        dataProvider = TaskListDataProvider()
+        taskTableView.delegate = dataProvider
+        taskTableView.dataSource = dataProvider
+        
+        let option = sortOptions[indexPath.item]
+        if option == "Priority - High" {
+            dataProvider.taskManager = TaskService.shared.getTodaySortTaskManager(value: false)
+        }else if option == "Priority - Normal"{
+           dataProvider.taskManager = TaskService.shared.getTodaySortTaskManager(value: true)
+        }
+        reloadTaskTable()
         self.popover.dismiss()
     }
 }

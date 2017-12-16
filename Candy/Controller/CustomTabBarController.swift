@@ -49,7 +49,7 @@ class CustomTabBarController: UITabBarController {
         let nav1 = UINavigationController(rootViewController: controller1)
         nav1.toolbar.isHidden = true
         
-        let controller2 = UIViewController()
+        let controller2 = UpcomingTaskVC()
         controller2.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "clock_line"), tag: 2)
         let nav2 = UINavigationController(rootViewController: controller2)
         

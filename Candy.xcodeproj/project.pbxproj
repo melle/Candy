@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		943056111FE480F200FDC5F7 /* UpcomingTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943056101FE480F200FDC5F7 /* UpcomingTaskVC.swift */; };
 		9439BE271FDCA29A00D47E49 /* InputTaskVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9439BE261FDCA29A00D47E49 /* InputTaskVCTests.swift */; };
 		9469911E1FCDDB34001B58C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9469911D1FCDDB34001B58C0 /* AppDelegate.swift */; };
 		946991201FCDDB34001B58C0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9469911F1FCDDB34001B58C0 /* LoginVC.swift */; };
@@ -62,6 +63,7 @@
 		67B17B088F7D48F01645CD7A /* Pods_CandyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABA843178014D1ACE0A909A /* Pods-CandyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CandyTests/Pods-CandyTests.release.xcconfig"; sourceTree = "<group>"; };
 		8C74C47F2F8530C5DDFE8A67 /* Pods_Candy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		943056101FE480F200FDC5F7 /* UpcomingTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTaskVC.swift; sourceTree = "<group>"; };
 		9439BE261FDCA29A00D47E49 /* InputTaskVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTaskVCTests.swift; sourceTree = "<group>"; };
 		9469911A1FCDDB34001B58C0 /* Candy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9469911D1FCDDB34001B58C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../New Group/AppDelegate.swift"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				94F807B71FD3098700A38906 /* CustomTabBarController.swift */,
 				94F807B91FD3183D00A38906 /* ListVC.swift */,
 				94F807D01FD4C69A00A38906 /* InputTaskVC.swift */,
+				943056101FE480F200FDC5F7 /* UpcomingTaskVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				94F807B81FD3098800A38906 /* CustomTabBarController.swift in Sources */,
 				94F807BC1FD36AE500A38906 /* Popover.swift in Sources */,
 				946991201FCDDB34001B58C0 /* LoginVC.swift in Sources */,
+				943056111FE480F200FDC5F7 /* UpcomingTaskVC.swift in Sources */,
 				94F807C11FD36F6300A38906 /* Task.swift in Sources */,
 				9469911E1FCDDB34001B58C0 /* AppDelegate.swift in Sources */,
 			);

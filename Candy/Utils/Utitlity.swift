@@ -65,20 +65,6 @@ func ==(lhs: LocalizedError, rhs: LocalizedError)  ->  Bool{
     return lhs.errorDescription == rhs.errorDescription && lhs.failureReason == rhs.failureReason && lhs.helpAnchor == rhs.helpAnchor && lhs.recoverySuggestion == rhs.recoverySuggestion && lhs.localizedDescription == rhs.localizedDescription
 }
 
-extension UIViewController {
-    func showAlert(withTitle title: String, message: String, completion: (()->())? = nil) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Okay", style: .default) { (alert) in
-            guard let completion = completion else {
-                return
-            }
-            completion()
-        }
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-    }
-}
-
 extension UILabel
 {
     func addImage(imageName: String, afterLabel bolAfterLabel: Bool = false)
